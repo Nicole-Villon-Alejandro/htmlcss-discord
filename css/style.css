@@ -19,6 +19,10 @@ header{
     background-size: cover;
 }
 
+img{
+    display: block;
+}
+
 .flex{
     display: flex;
 }
@@ -67,7 +71,6 @@ main section{
 
 .flex-basis-40{
     flex-basis: 40%;
-    height: 60px;
 }
 
 footer .flex div{
