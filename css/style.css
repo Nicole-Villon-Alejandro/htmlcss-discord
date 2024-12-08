@@ -62,8 +62,7 @@ main section{
 
 
 .flex-basis-60{
-    flex-basis: 60%;
-    height: 60px;
+    flex-basis: 60%
 }
 
 .flex-basis-40{
