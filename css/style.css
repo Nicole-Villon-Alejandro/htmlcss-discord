@@ -12,7 +12,6 @@ html{
     --color6: #23272A;
 }
 header{
-    height: 300px;
     padding-block: 15px;
     background-image: url(../img/jumbo.png );
     background-position: center;
@@ -20,8 +19,13 @@ header{
     background-repeat: no-repeat;
 }
 
-img{
-    display: block;
+.menu ul{
+    display: flex;
+    column-gap: 10px;
+}
+
+a{
+    color: white;
 }
 
 .flex{
@@ -30,25 +34,49 @@ img{
 
 header > .flex{
     justify-content: space-around;
+    align-items: center;
 }
 
-.menu ul{
-    display: flex;
-    column-gap: 10px;
+.btn{
+    border-radius: 20px;
+    /*padding-inline: 15px;
+    padding-block: 10px ;*/
+    padding: 10px 15px;
+    border: none;
 }
 
-.btn-accedi{
-    height: 50px;
-    width: 50px;
+.btn__white{
+    color: black;
+    background-color: #fff
 }
 
-
-.text-container{
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-    flex-direction: column;
+.btn__black{
     color: white;
+    background-color: black;
+}
+
+.btn__blue{
+    color: white;
+    background-color: blue
+}
+
+.textContainer{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color: white;
+}
+
+.textContainer__title{
+    text-transform: capitalize;
+}
+
+.bg-gray .textContainer{
+    color: black;
 }
 
 .container-80{
@@ -61,11 +89,6 @@ main section.bg-gray{
     background-color: var(--color4);
 }
 
-main section{
-    height: 200px;
-}
-
-
 .flex-basis-60{
     flex-basis: 60%
 }
@@ -74,16 +97,15 @@ main section{
     flex-basis: 40%;
 }
 
+footer{
+    background-color: rgb(25, 25, 131) 
+}
+
 footer .flex div{
     flex-basis: calc((100%) / 5);
-    height: 50px;
-    background-color: var(--color5);
 }
 
 footer .flex div:first-child{
     flex-basis: 25%;
 }
 
-footer{
-    background-color: var(--color6);
-}
