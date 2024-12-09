@@ -57,7 +57,7 @@ header > .flex{
 
 .btn__blue{
     color: white;
-    background-color: blue
+    background-color: #7389DA
 }
 
 .textContainer{
@@ -109,3 +109,10 @@ footer .flex div:first-child{
     flex-basis: 25%;
 }
 
+footer h2{
+    color: #7389DA;
+}
+
+footer h4{
+    color: #7389DA ;
+}
